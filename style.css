@@ -1,14 +1,33 @@
 body {
   font-family: 'PT Serif', serif;
   background-color: #9bc3ff;
-  color: #000256;
+  color: black;
 }
 h1, h2, h3 {
   font-style: italic;
 }
+a {
+  color: #20293d;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
 .navbar {
   border: thick outset #417fe2;
   border-radius: 10px;
+}
+.navbar-nav {
+  float: right;
+}
+.navbar-default .navbar-brand {
+  color: black;
+  font-size: 30px
 }
 .jumbotron {
   margin-top: 10px;
@@ -28,6 +47,23 @@ h1, h2, h3 {
   padding: 10px;
   margin-top: 20px;
 }
+figure {
+    display: inline-block;
+}
+figure img {
+    vertical-align: top;
+    margin: auto;
+    width: 300px;
+    border-radius: 8px;
+}
+figure figcaption {
+    margin-top: 5px;
+    text-align: center;
+    max-width: 400px;
+}
+.navbar-brand {
+  font-style: italic;
+}
 footer {
   position: relative;
   bottom: 0;
@@ -40,4 +76,24 @@ footer {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+.social {
+  text-align: center;
+  text-decoration: none;
+}
+@media only screen and (max-width : 767px) {
+  .navbar-nav {
+    float: none;
+  }
+  .navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #f4f4f4;
+    z-index: 2;
+  }
+  .jumbotron {
+    margin-top: 65px;
+  }
 }
