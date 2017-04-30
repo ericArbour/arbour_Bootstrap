@@ -94,6 +94,10 @@ footer {
   text-align: center;
   text-decoration: none;
 }
+.gif {
+  width: 150px;
+  border-radius: 5px;
+}
 @media only screen and (max-width : 767px) {
   .navbar-nav {
     float: none;
