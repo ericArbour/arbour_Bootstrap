@@ -1,8 +1,9 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 var questions = require('./questions'); 
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/api/questions', function(req, res) {
  console.log('get requested');
