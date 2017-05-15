@@ -1,0 +1,24 @@
+{
+  "name": "seinfeldfansite",
+  "version": "1.0.0",
+  "description": "Repository for Grand Circus prework deliverable 3.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erlichArbman/arbour_Bootstrap.git"
+  },
+  "author": "Eric Arbour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erlichArbman/arbour_Bootstrap/issues"
+  },
+  "homepage": "https://github.com/erlichArbman/arbour_Bootstrap#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}

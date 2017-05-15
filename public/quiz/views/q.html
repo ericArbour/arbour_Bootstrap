@@ -1,0 +1,7 @@
+<div class="main event">
+  {{questions[num].question}}
+  <ol>
+    <li ng-repeat="answer in questions[num].answers">{{answer}}</li>
+  </ol>
+  <a ng-href="#!/{{path}}"><button type="button">Submit</button></a>
+</div>
