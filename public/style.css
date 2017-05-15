@@ -3,6 +3,9 @@ body {
   background-color: #9bc3ff;
   color: black;
 }
+label {
+  display: block;
+}
 h1, h2, h3 {
   font-style: italic;
   margin-top: 10px;

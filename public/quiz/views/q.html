@@ -1,7 +1,9 @@
 <div class="main event">
   {{questions[num].question}}
   <ol>
-    <li ng-repeat="answer in questions[num].answers">{{answer}}</li>
+    <label ng-repeat="answer in questions[num].answers">
+      <input type="radio" name="guess" ng-model="$parent.guess" ng-value="answer">{{answer}}
+    </label>
   </ol>
-  <a ng-href="#!/{{path}}"><button type="button">Submit</button></a>
+  <a ng-href="#!/{{path}}"><button type="button" ng-click="tested()">Submit</button></a>
 </div>

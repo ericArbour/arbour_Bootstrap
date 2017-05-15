@@ -11,4 +11,17 @@ app.controller('quizController', function($scope, $routeParams, quizFactory) {
       $scope.path = 'results';
     }
   });
+  $scope.tested = function () {
+    $scope.test = quizFactory.addGuess($scope.guess);
+    console.log($scope.test);
+  };
+  // function () {
+  //   if ($scope.questions.length - 1 > $routeParams.num) {
+  //     console.log($scope.guess);
+  //     $scope.results.push($scope.guess);
+  //     console.log($scope.results);
+  //   } else {
+  //     console.log($scope.results);
+  //   }
+  // };
 });
