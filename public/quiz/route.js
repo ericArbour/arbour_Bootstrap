@@ -7,5 +7,7 @@ app.config(function($routeProvider) {
     }).when('/q:num', {
       templateUrl: 'views/q.html',
       controller: 'quizController'
+    }).when('/results', {
+      templateUrl: 'views/results.html'
     });
 })

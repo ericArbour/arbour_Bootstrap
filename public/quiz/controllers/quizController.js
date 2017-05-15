@@ -8,7 +8,7 @@ app.controller('quizController', function($scope, $routeParams, quizFactory) {
       $scope.path = 'q' + parseInt($scope.num + 1);
     } else {
       $scope.num = parseInt($routeParams.num);
-      $scope.path = '';
+      $scope.path = 'results';
     }
   });
 });
