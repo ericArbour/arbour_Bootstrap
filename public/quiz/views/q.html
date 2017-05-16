@@ -1,9 +1,11 @@
 <div class="main event">
   {{questions[num].question}}
-  <ol>
-    <label ng-repeat="answer in questions[num].answers">
-      <input type="radio" name="guess" ng-model="$parent.guess" ng-value="answer">{{answer}}
-    </label>
-  </ol>
-  <a ng-href="#!/{{path}}"><button type="button" ng-click="tested()">Submit</button></a>
+  <form name="quizForm">
+    <ol>
+      <label ng-repeat="answer in questions[num].answers">
+        <input type="radio" name="guess" ng-model="$parent.guess" ng-value="answer" ng-required="!color">{{answer}}
+      </label>
+    </ol>
+  <a ng-href="#!/{{path}}"><button type="button" ng-click="submit()" ng-disabled="quizForm.$invalid">{{ button }}</button></a>
+  </form>
 </div>

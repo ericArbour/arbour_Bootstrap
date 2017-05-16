@@ -1,13 +1,34 @@
 var questions = [
- {question: 'How much money in cash did Jerry give Elaine for her birthday in the season 2 finale, "The Deal"?',
+ {question: "What amount of cash did Jerry give Elaine for her birthday in the season 2 episode, The Deal?",
  answers: ['78', '500', '100', '182', '28'],
  correctAnswer: 3},
- {question: "What is the name of the brother of George's girlfriend who gets mad at him when he double-dips?",
+ {question: "What is the name of the brother of George's girlfriend who gets mad at him when he double-dips in the season 4 episode, The Implant?",
  answers: ['Johnny', 'Jimmy', 'Timmy', 'Tommy', 'Tony'],
  correctAnswer: 2},
- {question: "What song does George agree to sing to get Jerry's attention while he attempts to switch out the answering machine tape at George's girlfriend's house?",
+ {question: "What song does George agree to sing to get Jerry's attention while he attempts to switch out the answering machine tape at George's girlfriend's house in the season 2 episode, The Phone Message?",
  answers: ['MacArthur Park by Richard Harris', 'How Do You Solve a Problem Like Maria? by The Nuns', 'Lemon Tree by Trini Lopez', 'Lemon Tree by Peter, Paul and Mary', 'Downtown by Petula Clark'],
- correctAnswer: 2} 
+ correctAnswer: 2},
+ {question: "What law firm does Vanessa, Jerry's love interest, work for in the season 1 episode, The Stake Out?",
+ answers: ['Sagman, Bennett, Robbins, Oppenheim, and Taft', 'Feldman, Benes, Robbins, Oppenheim, and Taft', 'Feldman, Robbins, Banya, Oppenheim, and Taft', 'Sagman, Robbins, Oppenheim, David, and Taft', 'Sagget, Bagman, Roberts, Oppenfein, and Taft'],
+ correctAnswer: 0},
+ {question: "Who gives Jerry the titular pen in the season 3 episode, The Pen?",
+ answers: ['Morty Seinfeld', 'Helen Seinfeld', 'Frank Costanza', 'Estelle Costanza', 'Jack Klompus'],
+ correctAnswer: 4},
+ {question: "What real-life baseball player makes a cameo apperance in the season 3 episode, The Boyfriend",
+ answers: ['Mickey Mantel', 'Keith Hernandez', 'Derek Jeter', "Paul O'Neill", 'Joe DiMaggio'],
+ correctAnswer: 1},
+ {question: "In the season 4 finale, The Pilot, Charles the Butler is said to be the cousin of what other sitcom star?",
+ answers: ['Ted Danson', 'Paul Reiser', 'George Wendt', "John Ritter", "Carroll O'Connor"],
+ correctAnswer: 3},
+ {question: "What is the name of Jerry's childhood rival in the season 6 episode, The Race?",
+ answers: ['Duncan Meyer', 'Joel Horneck', 'Frankie Merman', 'Bert Harbinson', 'Dicky Hauser'],
+ correctAnswer: 0},
+ {question: "What is the nickname of the famous crooner who makes a cameo appearance in the season 6 episode, The Jimmy?",
+ answers: ['The Pony Remark', 'The Kiss Hello', 'The Soup Nazi', 'The Commando 8', 'The Velvet Fog'],
+ correctAnswer: 4},
+ {question: "How many Today Sponges come in a case in the season 7 episode, The Sponge?",
+ answers: ['50', '60', '40', "70", '80'],
+ correctAnswer: 1}
 ];
 
 module.exports = questions;

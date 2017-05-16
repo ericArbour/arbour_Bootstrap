@@ -8,6 +8,7 @@ app.config(function($routeProvider) {
       templateUrl: 'views/q.html',
       controller: 'quizController'
     }).when('/results', {
-      templateUrl: 'views/results.html'
+      templateUrl: 'views/results.html',
+      controller: 'quizController'
     });
 })

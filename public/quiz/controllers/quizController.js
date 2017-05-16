@@ -6,22 +6,18 @@ app.controller('quizController', function($scope, $routeParams, quizFactory) {
     if ($scope.questions.length - 1 > $routeParams.num) {
       $scope.num = parseInt($routeParams.num);
       $scope.path = 'q' + parseInt($scope.num + 1);
+      $scope.button = "Submit Answer";
     } else {
       $scope.num = parseInt($routeParams.num);
       $scope.path = 'results';
+      $scope.button = "Complete Quiz";
     }
   });
-  $scope.tested = function () {
-    $scope.test = quizFactory.addGuess($scope.guess);
-    console.log($scope.test);
+  $scope.results = quizFactory.getGuess();
+  $scope.submit = function () {
+    quizFactory.addGuess($scope.guess, $routeParams.num);
   };
-  // function () {
-  //   if ($scope.questions.length - 1 > $routeParams.num) {
-  //     console.log($scope.guess);
-  //     $scope.results.push($scope.guess);
-  //     console.log($scope.results);
-  //   } else {
-  //     console.log($scope.results);
-  //   }
-  // };
+  $scope.clear = function () {
+    quizFactory.clear();
+  }
 });
